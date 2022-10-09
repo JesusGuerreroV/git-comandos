@@ -24,6 +24,9 @@ Ejemplo: ssh-keygen -t ed25519 -C [tu-mail] -> ssh-keygen -t ed25519 -C `correo@
 | cat ~/.ssh/id_ed25519.pub | Muestra el SSH en consola | 
 
 Copiamos al SSH de consola y lo agregamos a la cuenta de GitHub: Dentro GitHub click en el icono del perfil (desplegable) > Settings > SSH and GPG keys > New SSH Key > Pones mombre descriptivo y pegas el SSH > Add SSH key
+|         |             |
+|---------|-------------|
+| ssh -T `git@github.com` | Checa si el proceso anterior fue correcto. Mostrando: "Hi USERNAME! You've successfully authenticated, but GitHub does not provide shell access" la configuración fue correcta. |
 
 ## Iniciar repo
 
