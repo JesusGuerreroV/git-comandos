@@ -4,14 +4,14 @@ Lista de comandos git
 ### Nota:
 
 Cuando se presenten comandos entre corchetes "[]", por ejemplo [tu-mail] se debe colocar el mail solamente (sin corchetes). 
-Ejemplo: ssh-keygen -t ed25519 -C [tu-mail] -> ssh-keygen -t ed25519 -C correo@ejemplo.com
+Ejemplo: ssh-keygen -t ed25519 -C [tu-mail] -> ssh-keygen -t ed25519 -C `correo@ejemplo.com`
 
 ## Config git
 
 | Comando | Descripción |
 |---------|-------------|
 | git config --global user.name "nombre" | Configura el nombre de usuario |
-| git config --global user.email "email@ejemplo.com" | Configura el email |
+| git config --global user.email "`email@ejemplo.com`" | Configura el email |
 | git config --get user.name | Muestra el nombre de usuario configurado |
 | git config --get user.email | Muestra el correo configurado |
 
@@ -30,4 +30,4 @@ Copiamos al SSH de consola y lo agregamos a la cuenta de GitHub: Dentro GitHub c
 | Comando | Descripción |
 |---------|-------------|
 | git init | Inicia un repo local |
-| git clone git@github.com:[usuario-github]/[nombre-repo].git | Crea una copia local de un repositorio remoto|
+| git clone `git@github.com:[usuario-github]/[nombre-repo].git` | Crea una copia local de un repositorio remoto|
