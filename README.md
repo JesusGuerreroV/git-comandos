@@ -12,8 +12,8 @@ Ejemplo: ssh-keygen -t ed25519 -C [tu-mail] -> ssh-keygen -t ed25519 -C `correo@
 |---------|-------------|
 | git config --global user.name "nombre" | Configura el nombre de usuario |
 | git config --global user.email "`email@ejemplo.com`" | Configura el email |
-| git config --get user.name | Muestra el nombre de usuario configurado |
-| git config --get user.email | Muestra el correo configurado |
+| git config --get user.name, git config user.name | Muestra el nombre de usuario configurado |
+| git config --get user.email, git config user.email | Muestra el correo configurado |
 
 ## Config SSH
 
