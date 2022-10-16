@@ -3,8 +3,22 @@ Lista de comandos git
 
 ### Nota:
 
-Cuando se presenten comandos entre corchetes "[]", por ejemplo [tu-mail] se debe colocar el mail solamente (sin corchetes). 
-Ejemplo: ssh-keygen -t ed25519 -C [tu-mail] -> ssh-keygen -t ed25519 -C `correo@ejemplo.com`
+Todo entre "[]" se debe reemplazar, por ejemplo: [filename] -> songs.txt
+
+## Pre git (comandos basicos shell)
+
+| Comando | Descripción |
+|---------|-------------|
+| ls [path] | list - Muestra el contenido de una carpeta (si no especificas path, muestra el contenido del directorio actual) |
+| ls -a [path] | Muestra el contenido, incluyendo el contenito oculto, de una carpeta (si no especificas path, muestra el contenido del directorio actual) |
+| start [., path] | (en windows) Abre el explorador en el directorio actual (.) o en [path] |
+| pwd | Muestra el directorio actual |
+| cd [path] | Cambia al directorio [path] |
+| cd .. | Se mueve una carpeta atras (equivalente a <- en explorer) |
+| touch [filename, path/filename] | Crea o actualiza un archivo (puedes crear varios separandolos con espacios, ej: touch file1.txt file2.txt ...) |
+| mkdir [dir, path/dir] | Crea una carpeta (puedes crear varias separandolas con espacios, ej: mkdir dir dir2)|
+| rm [filename, path/filename] | Elimina permanentemente el archivo [filename] (puedes eliminar varios archivos separandolos con espacios, ej: rm file file2) |
+| rm -rf [dir, path/dir] | Elimina permanentemente un directorio y su contenido (puedes eliminar varios separandolos con espacios, ej: rm -rf dir dir2) |
 
 ## Config git
 
