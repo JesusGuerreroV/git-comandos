@@ -47,4 +47,13 @@ Copiamos al SSH de consola y lo agregamos a la cuenta de GitHub: Dentro GitHub c
 | Comando | Descripción |
 |---------|-------------|
 | git init | Inicia un repo local |
-| git clone `git@github.com:[usuario-github]/[nombre-repo].git` | Crea una copia local de un repositorio remoto|
+| git clone `git@github.com:[usuario-github]/[nombre-repo].git` | Crea una copia local de un repositorio remoto |
+
+## Git basics
+| Comando | Descripción |
+|---------|-------------|
+| git status | Muestra el estado actual del repositorio |
+| git add file | Agrega un archivo al staging area (puedes separar archivos con un espacio para agregar varios, ej: git add file1 file2) |
+| git add . | Agrega todos los archivos al staging area |
+| git commit -m "mensaje" | Realiza un commit |
+| git log | Muestra el log de los commits en el repositorio |
