@@ -28,7 +28,7 @@ Todo entre "[]" se debe reemplazar, por ejemplo: [filename] -> songs.txt
 | git config --global user.email "`email@ejemplo.com`" | Configura el email |
 | git config --get user.name, git config user.name | Muestra el nombre de usuario configurado |
 | git config --get user.email, git config user.email | Muestra el correo configurado |
-| git config --global core.editor [editor] | Configura el editor de texto. [tabla que muestra el comando especifico para configurar el editor](https://git-scm.com/book/en/v2/Appendix-C%3A-Git-Commands-Setup-and-Config)|
+| git config --global core.editor [editor] | Configura el editor de texto [tabla que muestra el comando especifico para configurar el editor](https://git-scm.com/book/en/v2/Appendix-C%3A-Git-Commands-Setup-and-Config)|
 
 ## Config SSH
 
@@ -57,4 +57,6 @@ Copiamos al SSH de consola y lo agregamos a la cuenta de GitHub: Dentro GitHub c
 | git add file | Agrega un archivo al staging area (puedes separar archivos con un espacio para agregar varios, ej: git add file1 file2) |
 | git add . | Agrega todos los archivos al staging area |
 | git commit -m "mensaje" | Realiza un commit |
+| git commit --amend | Permite rehacer tu commit previo |
 | git log | Muestra el log de los commits en el repositorio |
+| git log --oneline | Muestra el log simplificado |
