@@ -28,6 +28,7 @@ Todo entre "[]" se debe reemplazar, por ejemplo: [filename] -> songs.txt
 | git config --global user.email "`email@ejemplo.com`" | Configura el email |
 | git config --get user.name, git config user.name | Muestra el nombre de usuario configurado |
 | git config --get user.email, git config user.email | Muestra el correo configurado |
+| git config --global core.editor [editor] | Configura el editor de texto. [tabla que muestra el comando especifico para configurar el editor](https://git-scm.com/book/en/v2/Appendix-C%3A-Git-Commands-Setup-and-Config)|
 
 ## Config SSH
 
