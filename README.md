@@ -57,6 +57,20 @@ Copiamos al SSH de consola y lo agregamos a la cuenta de GitHub: Dentro GitHub c
 | git add file | Agrega un archivo al staging area (puedes separar archivos con un espacio para agregar varios, ej: git add file1 file2) |
 | git add . | Agrega todos los archivos al staging area |
 | git commit -m "mensaje" | Realiza un commit |
+| git commit -a -m "mensaje" | Agrega los archivos al staging area y realiza el commit simultaneamnente |
 | git commit --amend | Permite rehacer tu commit previo |
 | git log | Muestra el log de los commits en el repositorio |
 | git log --oneline | Muestra el log simplificado |
+
+## Git branching
+| Comando | Descripción |
+|---------|-------------|
+| git branch | Muestra una lista de las branch existentes en el repo |
+| git branch [nombre] | Crea una nueva branch [nombre] |
+| git switch [nombre] | Cambia a la branch [nombre] |
+| git switch -c [nombre] | Crea una branch nueva y cambia a ella |
+| git checkout [nombre] | Cambia a la branch [nombre] |
+| git checkout -b [nombre] | Crea una branch nueva y cambia a ella |
+| git branch -d [nombre] | Elimina la branch [nombre] (si hiciste merge) (debes estar fuera de la rama [nombre]) |
+| git branch -D [nombre] | Forza el eliminado de la branch [nombre] (debes estar fuera de la rama [nombre] |
+| git branch -m [nuevoNombre] | Renombra una rama (debes estar en ella) a [nuevonombre] |
