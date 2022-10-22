@@ -19,6 +19,7 @@ Todo entre "[]" se debe reemplazar, por ejemplo: [filename] -> songs.txt
 | mkdir [dir, path/dir] | Crea una carpeta (puedes crear varias separandolas con espacios, ej: mkdir dir dir2)|
 | rm [filename, path/filename] | Elimina permanentemente el archivo [filename] (puedes eliminar varios archivos separandolos con espacios, ej: rm file file2) |
 | rm -rf [dir, path/dir] | Elimina permanentemente un directorio y su contenido (puedes eliminar varios separandolos con espacios, ej: rm -rf dir dir2) |
+| cat [filename] | Permite ver el contenido de [filename] |
 
 ## Config git
 
