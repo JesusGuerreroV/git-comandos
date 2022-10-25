@@ -63,10 +63,11 @@ Copiamos al SSH de consola y lo agregamos a la cuenta de GitHub: Dentro GitHub c
 | git log | Muestra el log de los commits en el repositorio |
 | git log --oneline | Muestra el log simplificado |
 
-## Git branching
+## Git branching y merging
 | Comando | Descripción |
 |---------|-------------|
 | git branch | Muestra una lista de las branch existentes en el repo |
+| git branch -v | Muestra una lista de las branch existentes y la info del ultimo commit |
 | git branch [nombre] | Crea una nueva branch [nombre] |
 | git switch [nombre] | Cambia a la branch [nombre] |
 | git switch -c [nombre] | Crea una branch nueva y cambia a ella |
@@ -75,3 +76,4 @@ Copiamos al SSH de consola y lo agregamos a la cuenta de GitHub: Dentro GitHub c
 | git branch -d [nombre] | Elimina la branch [nombre] (si hiciste merge) (debes estar fuera de la rama [nombre]) |
 | git branch -D [nombre] | Forza el eliminado de la branch [nombre] (debes estar fuera de la rama [nombre] |
 | git branch -m [nuevoNombre] | Renombra una rama (debes estar en ella) a [nuevonombre] |
+| git merge [nombreBranch] | Combina [nombreBranch] con la branch activa |
