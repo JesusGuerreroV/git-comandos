@@ -55,10 +55,11 @@ Copiamos al SSH de consola y lo agregamos a la cuenta de GitHub: Dentro GitHub c
 | Comando | Descripción |
 |---------|-------------|
 | git status | Muestra el estado actual del repositorio |
+| git status --untracked-files | Muestra el estado actual del repositorio a nivel archivo|
 | git add file | Agrega un archivo al staging area (puedes separar archivos con un espacio para agregar varios, ej: git add file1 file2) |
 | git add . | Agrega todos los archivos al staging area |
 | git commit -m "mensaje" | Realiza un commit |
-| git commit -a -m "mensaje" | Agrega los archivos al staging area y realiza el commit simultaneamnente |
+| git commit -a -m "mensaje" o git commit -am "mensaje" | Agrega los archivos al staging area y realiza el commit simultaneamnente |
 | git commit --amend | Permite rehacer tu commit previo |
 | git log | Muestra el log de los commits en el repositorio |
 | git log --oneline | Muestra el log simplificado |
@@ -77,3 +78,15 @@ Copiamos al SSH de consola y lo agregamos a la cuenta de GitHub: Dentro GitHub c
 | git branch -D [nombre] | Forza el eliminado de la branch [nombre] (debes estar fuera de la rama [nombre] |
 | git branch -m [nuevoNombre] | Renombra una rama (debes estar en ella) a [nuevonombre] |
 | git merge [nombreBranch] | Combina [nombreBranch] con la branch activa |
+
+## Git diff
+| Comando | Descripción |
+|---------|-------------|
+| git diff | Muestra los cambios entre el staging area y el directorio de trabajo |
+| git diff [filename] | Muestra los cambios entre el staging area y el directorio de trabajo para [filename] (puedes separar filenames con espacios para corroborar varios archivos)|
+| git diff HEAD | Muestra los cambios entre el ultimo commit y el directorio de trabajo |
+| git diff HEAD [filename] | Muestra los cambios entre el ultimo commit y el directorio de trabajo para [filename] (puedes separar filenames con espacios para corroborar varios archivos) |
+| git diff --staged, git diff --cached | Muestra los cambios entre staging area y el ultimo commit |
+| git diff --staged [filename], git diff --cached [filename] | Muestra los cambios entre staging area y el ultimo commit para [filename] (puedes separar filenames con espacios para corroborar varios archivos) |
+| git diff branch1..branch2, git diff branch1 branch2 | Muestra los cambios entre branch1 y branch2 |
+| git diff commit1..commit2, git diff commit1 commit2 | Muestra los cambios entre commit1 y commit2 |
