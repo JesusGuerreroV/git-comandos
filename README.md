@@ -90,3 +90,14 @@ Copiamos al SSH de consola y lo agregamos a la cuenta de GitHub: Dentro GitHub c
 | git diff --staged [filename], git diff --cached [filename] | Muestra los cambios entre staging area y el ultimo commit para [filename] (puedes separar filenames con espacios para corroborar varios archivos) |
 | git diff branch1..branch2, git diff branch1 branch2 | Muestra los cambios entre branch1 y branch2 |
 | git diff commit1..commit2, git diff commit1 commit2 | Muestra los cambios entre commit1 y commit2 |
+
+## Git stashing
+| Comando | Descripción |
+|---------|-------------|
+| git stash, git stash save | Almacena los cambios en el repo (staged y no staged) revirtiendo los cambios en tu directorio de trabajo |
+| git stash list | Ver la lista de staches que tenemos (los distintos cambios a los que les hemos aplicado git stash) |
+| git stash pop | Recupera los cambios almacenados mas recientes y los reaplica a tu directorio de trabajo (elimina los cambios del stash) |
+| git stash apply | Aplica los cambios almacenados en el stash pero no los elimina del stash. Util si quieres aplicar los cambios en diferentes lugares |
+| git stash apply stash@{n} | aplica los cambios almacenados en stash n |
+| git stash drop stash@{n} | Elimina el stash n |
+| git stash clear | Elimina todo el stash |
