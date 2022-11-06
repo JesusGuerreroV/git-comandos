@@ -101,3 +101,16 @@ Copiamos al SSH de consola y lo agregamos a la cuenta de GitHub: Dentro GitHub c
 | git stash apply stash@{n} | aplica los cambios almacenados en stash n |
 | git stash drop stash@{n} | Elimina el stash n |
 | git stash clear | Elimina todo el stash |
+
+# Git undoing and time traveling
+| Comando | Descripción |
+|---------|-------------|
+| git checkout [hash commit] | Para posicionarnos en un commit en particular (el estado del repo cambia a como estaba en ese momento) |
+| git checkout HEAD~1 | Para posicionarnos en el commit pasado (realmente puede ser HEAD~n y te posicionas en n commits antes de HEAD) |
+| git switch - | Cambia a la rama donde estabas sacandote del estado "detached  HEAD" |
+| git checkout HEAD [filename], git checkout -- [filename], git restore [filename] | Cambia el estado de [filename] a como estaba en HEAD (elimina los cambios que hiciste y los deja a tu ultimo commit) |
+| git restore --source [HEAD~n, commit hash] [filename] | Cambia el estado de [filename] a como estaba en [HEAD~n] o [commit hash] |
+| git restore --staged [filename] | Elimina [filename] del area de staging |
+| git reset [commit hash] | Resetea el repositorio al momento que se hizo el commit [commit hash] mantiendo los cambios en el directorio de trabajo |
+| git reset --hard [commit hash] | Resetea el repositorio al momento que se hizo el commit [commit hash] eliminando los cambios realizados |
+| git revert [commit hash] | Resetea el repositorio al momento que se hizo el commit [commit hash] pero se hace hace un commit nuevo y los commits descartados en el nuevo commit quedan en la historia del repo |
