@@ -43,6 +43,8 @@ Copiamos al SSH de consola y lo agregamos a la cuenta de GitHub: Dentro GitHub c
 |         |             |
 |---------|-------------|
 | ssh -T `git@github.com` | Checa si el proceso anterior fue correcto. Mostrando: "Hi USERNAME! You've successfully authenticated, but GitHub does not provide shell access" la configuración fue correcta. |
+| [documentacion](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) | |
+
 
 ## Iniciar repo
 
@@ -102,7 +104,7 @@ Copiamos al SSH de consola y lo agregamos a la cuenta de GitHub: Dentro GitHub c
 | git stash drop stash@{n} | Elimina el stash n |
 | git stash clear | Elimina todo el stash |
 
-# Git undoing and time traveling
+## Git undoing and time traveling
 | Comando | Descripción |
 |---------|-------------|
 | git checkout [hash commit] | Para posicionarnos en un commit en particular (el estado del repo cambia a como estaba en ese momento) |
@@ -114,3 +116,16 @@ Copiamos al SSH de consola y lo agregamos a la cuenta de GitHub: Dentro GitHub c
 | git reset [commit hash] | Resetea el repositorio al momento que se hizo el commit [commit hash] mantiendo los cambios en el directorio de trabajo |
 | git reset --hard [commit hash] | Resetea el repositorio al momento que se hizo el commit [commit hash] eliminando los cambios realizados |
 | git revert [commit hash] | Resetea el repositorio al momento que se hizo el commit [commit hash] pero se hace hace un commit nuevo y los commits descartados en el nuevo commit quedan en la historia del repo |
+
+## Collaboration
+| Comando | Descripción |
+|---------|-------------|
+| git remote | Lista los "remote" actuales que tienes en el repo |
+| git remote -v | Lista los "remote" actuales que tienes en el repo (verbose) |
+| git remote add [nombre] [url] | Agrega un nuevo remote con nombre [name] (por convencion se nombra origin) apuntando a [url] en github |
+| git remote rename [nombre] [nuevoNombre] | Renombra [nombre] a [nuevoNombre] |
+| git remote remove [nombre] | Elimina el remote [nombre] |
+| git push [remote] [branch] | Sube o actualiza los cambios de [branch] en [remote] |
+| git push [remote] [localBranch]:[branch] | Sube o actualiza los cambios de [localBranch] a [branch] en [remote] |
+| git push -u [remote] [branch] | Sube o actualiza los cambios de [branch] en [remote] pero al mismo tiempo vincula [branch] con su equivalente en origin permitiendo utilizar solo git push (en la rama a la que le quieres hacer push) ya que git recuerda ese vinculo |
+| git branch -r | Enlista las ramas que existen en remote |
