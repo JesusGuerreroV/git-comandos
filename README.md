@@ -129,3 +129,7 @@ Copiamos al SSH de consola y lo agregamos a la cuenta de GitHub: Dentro GitHub c
 | git push [remote] [localBranch]:[branch] | Sube o actualiza los cambios de [localBranch] a [branch] en [remote] |
 | git push -u [remote] [branch] | Sube o actualiza los cambios de [branch] en [remote] pero al mismo tiempo vincula [branch] con su equivalente en origin permitiendo utilizar solo git push (en la rama a la que le quieres hacer push) ya que git recuerda ese vinculo |
 | git branch -r | Enlista las ramas que existen en remote |
+| git switch [remoteBranch] | Si quieres usar una branch en remote pudes utilizar el comando switch y automaticamente te crea una branch local que este trackeando a [remoteBranch] |
+| git checkout --track origin/[branch] | Alternativa del comando anterior |
+| git fetch, git fetch origin, git fetch [remote] | Descarga los cambios en remote a tu repositorio local sin afectar tu directorio de trabajo, solo actualiza las branches remotas. Si no se especifica [remote] el default es origin |
+| git fetch [remote] [branch] | Descarga los cambios de la [branch] especifica sin afectar el directorio de trabajo |
